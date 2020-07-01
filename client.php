@@ -41,7 +41,7 @@
 <article class="content">
     <fieldset>
         <legend>Creation Client</legend>
-        <form class="form" onsubmit="return post()" method="post" action="add_client">
+        <form class="form" onsubmit="return post()" method="post" action="traittement.php">
             <div>
                 <select name="typeclient" id="typeclient" class="slct selectclt" onchange="typeClient()">
                     <option value="0">--Choix du Type de Client--</option>
