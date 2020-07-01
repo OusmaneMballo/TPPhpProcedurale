@@ -181,7 +181,7 @@ function validation(){
 function post(){
     if (validation()){
         
-        addClient();
+        //addClient();
     }
     else{
         alert('Merci de renseigner les champs actives');

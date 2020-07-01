@@ -6,9 +6,9 @@
     <meta name="description" content="Gestion des activites bancaires"/>
     <meta name="author" content="mballoSoft"/>
     <title>Add | Compte</title>
+    <link rel="stylesheet" href="./css/client.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="./css/compte.css"/>
-    <link rel="stylesheet" href="./css/client.css"/>
 </head>
 <body>
 <header>
@@ -42,7 +42,7 @@
 <article class="content">
     <fieldset>
         <legend>Creation Compte</legend>
-        <form action="" class="form">
+        <form method="post" onsubmit="return post()" class="form" action="traittementcompte.php">
             <div class="row">
                 <select name="typecp" class="selectcmpt" id="typecp" onchange="frais()">
                     <option value="0">--Type Compte--</option>
@@ -50,21 +50,22 @@
                     <option value="2">Courant</option>
                     <option value="2">Bloquer</option>
                 </select>
-
-                    <?php
-                        echo "<select name='client' id='client' class='slct'>";
-                            echo "<option value='0'>--------------------List des Clients-----------------</option>";
-                            echo "<option disabled>---------------------Client Moral---------------------</option>";
-                            include './traittementcompte.php';
-                        echo "</select>";
-                    ?>
-
+                <label for="solde">Solde</label>
+                <input type="text" class="inputcl" id="solde" name="solde"/>
             </div>
             <div class="row">
                 <label for="frai">Frais:<b id="frai"></b></label>
+                <?php
+                    echo "<select name='client' id='client' class='slct'>";
+                    echo "<option value='0'>-------List des Clients--------</option>";
+                    echo "<option disabled>--------Client Moral------------</option>";
+                    include './traittementcompte.php';
+                    echo "</select>";
+                ?>
+
             </div>
             <div class="row">
-                <button type="button" class="valider" onclick="post()">Ajouter</button>
+                <button type="submit" class="valider">Ajouter</button>
                 <button type="reset" class="annuler">Annuler</button>
             </div>
         </form>

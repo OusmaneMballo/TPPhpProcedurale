@@ -65,7 +65,7 @@ function frais(){
 ///
 function post() {
     if (verificationCompte()) {
-        alert('Okey tout les champs sont remplis')
+
     }
     else{
         alert('Merci de renseigner les champs actives');
