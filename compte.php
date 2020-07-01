@@ -50,11 +50,15 @@
                     <option value="2">Courant</option>
                     <option value="2">Bloquer</option>
                 </select>
-                <select name="client" id="client" class="slct">
-                    <option value="0">--Clients--</option>
-                    <option value="1">Client1</option>
-                    <option value="2">Client2</option>
-                </select>
+
+                    <?php
+                        echo "<select name='client' id='client' class='slct'>";
+                            echo "<option value='0'>--------------------List des Clients-----------------</option>";
+                            echo "<option disabled>---------------------Client Moral---------------------</option>";
+                            include './traittementcompte.php';
+                        echo "</select>";
+                    ?>
+
             </div>
             <div class="row">
                 <label for="frai">Frais:<b id="frai"></b></label>

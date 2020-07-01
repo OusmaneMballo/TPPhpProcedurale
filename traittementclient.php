@@ -104,6 +104,8 @@ function addCP($cnxdb)
 
 }
 
+
+
 /*
 * Ajout d'un client
  * */
