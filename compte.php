@@ -44,19 +44,16 @@
         <legend>Creation Compte</legend>
         <form method="post" onsubmit="return post()" class="form" action="traittementcompte.php">
             <div class="row">
-                <select name="typecp" class="selectcmpt" id="typecp" onchange="frais()">
-                    <option value="0">--Type Compte--</option>
-                    <option value="1">Xewel | Epargne</option>
-                    <option value="2">Courant</option>
-                    <option value="2">Bloquer</option>
-                </select>
+                <?php
+                include './listTypeCompte.php';
+                ?>
                 <label for="solde">Solde</label>
                 <input type="text" class="inputcl" id="solde" name="solde"/>
             </div>
             <div class="row">
                 <label for="frai">Frais:<b id="frai"></b></label>
                 <?php
-                    echo "<select name='client' id='client' class='slct'>";
+                    echo "<select name='client' id='client' class='selectcmpt'>";
                     echo "<option value='0'>-------List des Clients--------</option>";
                     echo "<option disabled>--------Client Moral------------</option>";
                     include './traittementcompte.php';

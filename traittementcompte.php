@@ -21,6 +21,12 @@ function listClientMoral()
     return getConnexion()->query($requete1);
 }
 
+function selectFrans($idfrais)
+{
+    $requete="SELECT fraisbanc FROM `frais_bancaire` WHERE id=$idfrais";
+    return getConnexion()->query($requete);
+}
+
 function listClientPhysique()
 {
     $requete2="SELECT * FROM `client_physique`";
@@ -89,10 +95,11 @@ function addCompte()
                 $prepareStetement=$cnx->prepare($requete);
                 $prepareStetement->execute(array($numCmpte,$clerib,
                     1,$_POST['solde'],'Actif', null, $tab[0], date('d-m-y'),
-                    null, null, null, 1));
+                    null, null, null, $_POST['typecp']));
 
                 $dcpmt=$cnx->lastInsertId();
-                addFraiBancaire(450,1,$dcpmt);
+                $frai=selectFrans($_POST['typecp'])->fetch(PDO::FETCH_ASSOC);
+                addFraiBancaire($frai['fraisbanc'],$_POST['typecp'],$dcpmt);
 
                 return $dcpmt;
             }
@@ -125,7 +132,8 @@ function addCompte()
                 null, null, null, 1));
             $dcpmt=$cnx->lastInsertId();
 
-            addFraiBancaire(450,1,$dcpmt);
+            $frai=selectFrans($_POST['typecp'])->fetch(PDO::FETCH_ASSOC);
+            addFraiBancaire($frai,$_POST['typecp'],$dcpmt);
 
             return $dcpmt;
         }

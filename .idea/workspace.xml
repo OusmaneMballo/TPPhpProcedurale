@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5159a65d-d502-4037-8e60-ea7b05aefd14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/listTypeCompte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compte.php" beforeDir="false" afterPath="$PROJECT_DIR$/compte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/compte.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/compte.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traittementcompte.php" beforeDir="false" afterPath="$PROJECT_DIR$/traittementcompte.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,24 +28,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traittementcompte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
+            <state relative-caret-position="434">
+              <caret line="101" column="76" lean-forward="true" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/compte.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h1#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compte.php">
+        <entry file="file://$PROJECT_DIR$/listTypeCompte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#h1#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -104,9 +113,10 @@
         <option value="$PROJECT_DIR$/traittement.php" />
         <option value="$PROJECT_DIR$/traittementclient.php" />
         <option value="$PROJECT_DIR$/js/client.js" />
-        <option value="$PROJECT_DIR$/compte.php" />
         <option value="$PROJECT_DIR$/js/compte.js" />
         <option value="$PROJECT_DIR$/traittementcompte.php" />
+        <option value="$PROJECT_DIR$/listTypeCompte.php" />
+        <option value="$PROJECT_DIR$/compte.php" />
       </list>
     </option>
   </component>
@@ -177,12 +187,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593536172924</updated>
-      <workItem from="1593536175576" duration="23127000" />
+      <workItem from="1593536175576" duration="26132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23127000" />
+    <option name="totallyTimeSpent" value="26132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1274" height="773" extended-state="0" />
@@ -244,17 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h1#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/compte.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -271,8 +270,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traittementcompte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="170" column="39" lean-forward="true" selection-start-line="170" selection-start-column="39" selection-end-line="170" selection-end-column="39" />
+        <state relative-caret-position="434">
+          <caret line="101" column="76" lean-forward="true" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listTypeCompte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h1#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
